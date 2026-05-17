@@ -702,7 +702,7 @@ public class PDFPage {
     }
 
     public void addAnnotations() {
-        if(this.annots != null) {
+        if (this.annots != null) {
             for (PDFAnnotation pdfAnnotation : this.annots) {
                 // add command to the page if needed
                 this.commands.addAll(pdfAnnotation.getPageCommandsForAnnotation());
